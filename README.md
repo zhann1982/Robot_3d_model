@@ -1,5 +1,17 @@
 # SELENE — sci-fi female cyborg
 
+## Reference-inspired revision
+
+`SELENE_REFERENCE.blend` is the newer white-and-black version: no helmet, arms lowered, tapered limb shells, a continuous shaped chest cuirass, a ribbed abdominal column and a seamless light studio. It follows the supplied image's design direction but is a procedural interpretation, not an exact reproduction of its sculpted face.
+
+![Reference-inspired standing pose](renders_reference/01_full_body.png)
+
+![Reference-inspired face](renders_reference/02_face.png)
+
+![Reference-inspired rear view](renders_reference/03_back.png)
+
+Rebuild with `blender --background --python create_reference_robot.py`. Keep `create_robot.py` beside it: the new generator imports its primitive helpers without running the old scene pipeline. Cycles: 48 samples, denoising. The original scene remains available separately below.
+
 Детализированный статичный арт женщины-киборга: светлое синтетическое лицо, открытый шлем с датчиками, жемчужный металлический корпус и видимая механика. В сцене 616 объектов и около 156 тысяч базовых вершин, до применения subdivision. Лицо стилизованное; модель не претендует на фотореалистичный ручной скульпт.
 
 A procedural, detailed static Blender artwork: light synthetic human face, open helmet with optical sensors, pearl titanium armor, exposed actuators, articulated mechanical fingers, abdominal conduits and dorsal spine assemblies.

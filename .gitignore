@@ -1,4 +1,5 @@
 *.blend1
 *.blend2
 build.log
+reference_build.log
 __pycache__/
