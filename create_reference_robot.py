@@ -142,7 +142,7 @@ area('Portrait softbox',(-3,-2,4),500,2.5);area('Right fill',(3,-2,3),65,3);area
 d=bpy.data.cameras.new('Reference portrait camera');cam=bpy.data.objects.new(d.name,d);bpy.context.collection.objects.link(cam);scene.camera=cam
 scene.view_settings.view_transform='AgX';scene.render.image_settings.file_format='PNG';scene.render.resolution_percentage=100
 output=os.path.join(ROOT,'renders_reference');os.makedirs(output,exist_ok=True)
-shots=[('01_full_body',(2.6,-6,2.6),(0,0,1.02),78,1100,1500),('02_face',(.5,-2.6,1.99),(0,0,1.82),105,1200,1200),('03_back',(-2.5,6,2.6),(0,0,1.02),78,1100,1500)]
+shots=[('01_full_body',(2.6,-6,2.6),(0,0,1.02),78,1100,1500),('02_face',(.5,-2.6,1.99),(0,0,1.82),105,1200,1200),('03_back',(-1.4,2.8,2.0),(0,0,1.02),43,1100,1500)]
 def shot(v):
  name,loc,target,lens,w,h=v;cam.location=loc;aim(cam,target);d.lens=lens;scene.render.resolution_x=w;scene.render.resolution_y=h;scene.render.filepath=os.path.join(output,name+'.png')
 shot(shots[0]);bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT,'SELENE_REFERENCE.blend'))

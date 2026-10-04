@@ -2,4 +2,5 @@
 *.blend2
 build.log
 reference_build.log
+repair.log
 __pycache__/
